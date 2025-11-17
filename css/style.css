@@ -10,7 +10,11 @@ body {
     background-image: url('../img/l.jpg');
     background-size:cover;
 }
-
+h1
+{
+  color: rgb(0, 249, 75); 
+  text-shadow: 2px 2px 8px whitesmoke;  
+}
 button {
     padding: 10px 20px;
     font-size: 18px;
