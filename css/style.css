@@ -15,9 +15,32 @@ body {
 h1
 {
   color: rgb(0, 249, 75); 
-  text-shadow: 2px 2px 8px whitesmoke;  
+  text-shadow: 2px 2px 8px whitesmoke;
+   
 }
 button {
     padding: 10px 20px;
     font-size: 18px;
+    border-radius: 2cm;
+    background-color:cyan;
+    
+}
+button:hover
+{
+transition: transform 2s ease;
+    
+    transform: skew(10deg,50deg);
+    box-shadow: 2px 2px 8px white;
+}
+h1:hover
+{
+    transition: transform 2s ease;
+    transform: translateY(-50px);
+    box-shadow: 2px 2px 8px white;
+    
+}
+h1::after
+{
+  transform: translateX(50px);
+  transition: transform 2s ease;
 }

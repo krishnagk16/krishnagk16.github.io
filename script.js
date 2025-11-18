@@ -1,3 +1,4 @@
-function showMessage() {
-    alert("Will You marry me, baby.");
+function showMessage() 
+{
+    alert("hi");
 }
