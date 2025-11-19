@@ -12,35 +12,26 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-h1
+
+.one
 {
-  color: rgb(0, 249, 75); 
-  text-shadow: 2px 2px 8px whitesmoke;
-   
+  text-align: center;
+  margin-right: 38px;
+  margin-top: 5px;
 }
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 2cm;
-    background-color:cyan;
-    
-}
-button:hover
+
+.my-img
 {
-transition: transform 2s ease;
-    
-    transform: skew(10deg,50deg);
-    box-shadow: 2px 2px 8px white;
+ width: 15cm;
+ height: 15cm;
+ border-radius: 8cm;
+ text-align: left 100cm;
+ 
 }
-h1:hover
-{
-    transition: transform 2s ease;
-    transform: translateY(-50px);
-    box-shadow: 2px 2px 8px white;
-    
+
+.my-img:hover {
+  transition: transform 8s ease-in-out;
+  transform: rotate(360deg) scale(1.2);
 }
-h1::after
-{
-  transform: translateX(50px);
-  transition: transform 2s ease;
-}
+
+
