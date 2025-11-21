@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <link rel="stylesheet" href="css/style.css">
 <head>
     <title>SHOW LINE</title>
@@ -16,7 +17,7 @@
            <li class="lis"><a class="Navitam" href="About.html">ABOUT US</a></li>
            <li class="lis"><a class="Navitam" href="Services.html">SERVICES</a></li>
            <li class="lis"><a class="Navitam" href="Contact.html">CONTACT US</a></li>
-           <li class="lis"><a class="Navitam" href="Login.html">LOGIN</a></li>
+           <li class="lis"><a class="Navitam" href="#" onclick="openLogin(); return false"; >LOGIN</a></li>
           </ul>
         </nav>
     </div>
@@ -29,12 +30,31 @@
   <h3>
      <span>SHOW LINE</span> brings intelligent security and surveillance solutions that protect people, properties and assets. They ensure safety, security and productivity in various industrial processes and help make the world safer. Our integrated security systems have been used in various situations and they deliver comprehensive coverage.</h3>
 </div>
+<div id="loginbox" class="poplongin">
+     <span id="closeBtn" class="close-btn"> &times;</span>
+    <form class="forlog">
+      
+      <h1> LOGIN </h1>
+      <input type="text" placeholder="Username"><br>
+      <input type="password" placeholder="Password"><br><br>
+      <label>
+      <input type="checkbox" name="Reminder Me"> Reminder Me
+      </label>
+      <a href="#" class="forgot"> Forget Password?</a><br><br>
+      <input class="sum" type="submit" value="LOGIN"><br><br>
+       Don't Have an Account<a href="#" class="forgot"> Register?</a><br>
+    </form> 
+
+   </div>
 <div class="detail1">
   <h1 class="d1">Types of CCTV systems</h1>
   <h3>
 Analog - Network or IP
 Used with analog or digital cameras, these systems utilize a video server to stream footage over the internet. The advantages are the possibility of WiFi and audio, Distributed Artificial Intelligence (DAI) for analyzing image footage, remote access, Power Over Ethernet (POE), and better resolution. Furthermore, IP cameras have the ability to contain more cameras in one, which can cover a wide angle that may normally take multiple cameras or camera systems to cover.</h3>
 </div>
+
+   
+
 </div>
 
 <div class="ratig">
@@ -48,7 +68,9 @@ Used with analog or digital cameras, these systems utilize a video server to str
   <img class="im3" src="img/R4.jpg" alt="logo photo">
   </div>
     
-</div>
 
+
+</div>
+   <script src="script.js"></script>
 </body>
 </html>
