@@ -1,5 +1,4 @@
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Font+Name">
+
 *
 {
   margin: 0;
@@ -8,9 +7,8 @@
 body
 {
   background-image: url("/img/BG.jpg");
-  
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   
 
 }
@@ -27,15 +25,29 @@ body
   width: 100px;
   height: 100px;
   box-shadow: 0 0 30px white;
-  border-radius: 4cm;
-
+  border-radius: 2cm;
+  transition: 2s;
+}
+.im:hover
+{
+  box-shadow: 0 0 30px cornflowerblue;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .CN
 {
   margin-top: 25px;
   white-space: nowrap;
+  color: mintcream;
+  text-shadow: 4px 2px 5px gainsboro;
+  transition: 2s;
+}
+.CN:hover
+{
   color: aqua;
-  
+  cursor: pointer;
+  transform: scale(1.1);
+  text-shadow: 4px 2px 5px skyblue;
 }
 nav ul li
 {
@@ -48,8 +60,12 @@ nav ul li
   height: 40px;
   text-decoration: none;
   padding: 15px 20px;
-  background-color: white;
+  color:white;
   border-radius: 3cm;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: 500;
   
   
 }
@@ -57,7 +73,7 @@ nav ul li
 {
   
   padding: 20px 20px;
-  margin-left: 16cm;
+  margin-left: 18cm;
   
 }
 .listmanu
