@@ -10,6 +10,10 @@
     width: 100%;
     overflow-x: scroll;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
   body
   {
     background-image: url("../img/BG.jpg");
@@ -17,11 +21,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+
   }
   /*this change code */
   @supports (-webkit-touch-callout: none) {
     body {
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
 }
 
@@ -75,7 +80,7 @@
     padding: 15px 20px;
     color:white;
     border-radius: 3cm;
-    font-size: 20px;
+    font-size: 15px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     font-weight: 500;
     background: rgba(255, 255, 255, 0.2);
@@ -556,8 +561,20 @@ label
 
     .detail, .detail1 
     {
-        width: 300px;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 14px;
+        text-align: center;
     }
 
+  
+   .detail h1, .detail1 h1 {
+        font-size: 20px;
+    }
+
+    .detail h3, .detail1 h3 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
   }
  
