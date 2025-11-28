@@ -133,8 +133,9 @@ nav ul li {
   top: 5%;
   left: 44%;
   box-shadow: 2px 4px 2px white;
-  border-radius: 25px;
+  border-radius: 20px;
   transition: 2s ease;
+  width: 50px;
 }
 .icon:hover {
   transform: rotate(360deg);
@@ -145,6 +146,7 @@ nav ul li {
   height: 100%;
   top: 20%;
   left: 9%;
+  
 }
 .dlist {
   position: relative;
@@ -154,13 +156,17 @@ nav ul li {
   margin: 30px;
   border-radius: 30px;
   display: inline-block;
+  box-shadow: 3px 3px 2px black;
+  
 }
 .imglist {
   width: 100%;
   height: 40%;
   opacity: 1;
   border-radius: 30px 30px 0px 0px;
+  
 }
+
 .insidelogo {
   position: absolute;
   top: 25%;
@@ -195,5 +201,132 @@ nav ul li {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.text
+{
+  position: absolute;
+  font-size: 18px;
+  top: 250px;
+  left: 10px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  
+}
+.textp
+{
+  position: absolute;
+  font-size: 15px;
+  top: 320px;
+  text-align: center;
+  font-weight: normal;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .Main {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .im {
+    width: 70px;
+    height: 70px;
+  }
+
+  .CN {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .Manu {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .listmanu {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .Navitam {
+    font-size: 16px;
+    padding: 10px 15px;
+    height: auto;
+  }
+
+  /* SERVICES BOX */
+  .Services {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-top: 20%;
+  }
+
+  .head1 {
+    top: 3%;
+    left: 35%;
+    font-size: 20px;
+  }
+
+  .head2 {
+    top: 6%;
+    left: 23%;
+    font-size: 22px;
+  }
+
+  .icon {
+    top: 2%;
+    left: 40%;
+    width: 35px;
+  }
+
+  /* SERVICE LIST CARDS */
+  .Alist {
+    top: 18%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dlist {
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+  }
+
+  .imglist {
+    height: 180px;
+  }
+
+  .insideimg,
+  .ring {
+    width: 90px;
+    height: 90px;
+    margin-left: calc(50% - 45px);
+  }
+
+  .text {
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .textp {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+    padding: 10px;
   }
 }
