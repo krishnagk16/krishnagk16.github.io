@@ -220,7 +220,6 @@ nav ul li {
   padding: 20px;
 }
 @media (max-width: 600px) {
-  @supports (-webkit-touch-callout: none) {
     html,
     body {
       overflow-x: hidden;
@@ -329,4 +328,4 @@ nav ul li {
       padding: 10px;
     }
   }
-}
+
