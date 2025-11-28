@@ -486,17 +486,44 @@ label {
 }
 
 @media (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .Main {
+    position: relative;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .im {
+    width: 70px;
+    height: 70px;
+  }
+
+  .CN {
+    font-size: 20px;
+    margin-top: 5px;
   }
 
   .Manu {
     margin-left: 0;
+    padding: 0;
   }
 
   .listmanu {
-    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 28px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .Navitam {
+    font-size: 10px;
+    padding: 9px 10px;
   }
 
   .c {
