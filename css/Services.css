@@ -82,7 +82,6 @@ nav ul li {
   list-style-type: none;
   gap: 10px;
   display: flex;
-
 }
 
 .Services {
@@ -221,111 +220,113 @@ nav ul li {
   padding: 20px;
 }
 @media (max-width: 600px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+  @supports (-webkit-touch-callout: none) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
 
-  .Main {
-    position: relative;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    text-align: center;
-  }
+    .Main {
+      position: relative;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      text-align: center;
+    }
 
-  .im {
-    width: 70px;
-    height: 70px;
-  }
+    .im {
+      width: 70px;
+      height: 70px;
+    }
 
-  .CN {
-    font-size: 20px;
-    margin-top: 5px;
-  }
+    .CN {
+      font-size: 20px;
+      margin-top: 5px;
+    }
 
-  .Manu {
-    margin-left: 0;
-    padding: 0;
-  }
+    .Manu {
+      margin-left: 0;
+      padding: 0;
+    }
 
-  .listmanu {
-    margin-top: 40px;
-    margin-left: 28px;
-    gap: 15px;
-    text-align: center;
-  }
+    .listmanu {
+      margin-top: 40px;
+      margin-left: 28px;
+      gap: 15px;
+      text-align: center;
+    }
 
-  .Navitam {
-    font-size: 10px;
-    padding: 9px 10px;
-  }
+    .Navitam {
+      font-size: 10px;
+      padding: 9px 10px;
+    }
 
-  /* SERVICES BOX */
-  .Services {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-top: 15%;
-    height: 2100px;
-  }
+    /* SERVICES BOX */
+    .Services {
+      width: 95%;
+      margin-left: 2.5%;
+      margin-top: 15%;
+      height: 2100px;
+    }
 
-  .head1 {
-    top: 2.3%;
-    left: 43%;
-    font-size: 20px;
-  }
+    .head1 {
+      top: 2.3%;
+      left: 43%;
+      font-size: 20px;
+    }
 
-  .head2 {
-    top: 6%;
-    left: 12%;
-    font-size: 19px;
-  }
+    .head2 {
+      top: 6%;
+      left: 12%;
+      font-size: 19px;
+    }
 
-  .icon {
-    top: 2%;
-    left: 30%;
-    width: 35px;
-  }
+    .icon {
+      top: 2%;
+      left: 30%;
+      width: 35px;
+    }
 
-  /* SERVICE LIST CARDS */
-  .Alist {
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    text-align: center;
-  }
+    /* SERVICE LIST CARDS */
+    .Alist {
+      top: 10%;
+      left: 0%;
+      width: 100%;
+      text-align: center;
+    }
 
-  .dlist {
-    width: 90%;
-    height: auto;
-    margin: 30px auto;
-    display: block;
-  }
+    .dlist {
+      width: 90%;
+      height: auto;
+      margin: 30px auto;
+      display: block;
+    }
 
-  .imglist {
-    height: 180px;
-  }
+    .imglist {
+      height: 180px;
+    }
 
-  .insideimg,
-  .ring,
-  .insidelogo {
-    width: 50px;
-    height: 50px;
-    margin-left: 35%;
-    margin-top: 40px;
-  }
+    .insideimg,
+    .ring,
+    .insidelogo {
+      width: 50px;
+      height: 50px;
+      margin-left: 35%;
+      margin-top: 40px;
+    }
 
-  .text {
-    position: relative;
-    top: 10px;
-    font-size: 16px;
-    padding: 10px;
-  }
+    .text {
+      position: relative;
+      top: 10px;
+      font-size: 16px;
+      padding: 10px;
+    }
 
-  .textp {
-    position: relative;
-    top: 0px;
-    font-size: 14px;
-    padding: 10px;
+    .textp {
+      position: relative;
+      top: 0px;
+      font-size: 14px;
+      padding: 10px;
+    }
   }
 }
