@@ -4,7 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image:url("../img/pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    inset: 0;
+    background: rgba(12, 10, 10, 0.628); /* change 0.5 = opacity */
+    pointer-events: none; 
+    z-index: 0;
+}
 .Main
   {
    position: fixed; 
@@ -29,7 +50,7 @@
   }
   .CN
   {
-    margin-top: 25px;
+    margin-top: 40px;
     white-space: nowrap;
     color: mintcream;
     text-shadow: 4px 2px 5px gainsboro;
@@ -91,14 +112,6 @@
     gap: 10px;
     display: flex;
   }
-
-
-html, body 
-{   
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden
-}
 .INLOB
 {   
     display: flex;
@@ -107,45 +120,27 @@ html, body
     justify-content: center;
     margin-top: 10px;
 }
-
 .INLO
 {
    width: 28px;
-}
-body
-{   
-    position: relative; 
-    background-image:url("../img/pic.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(12, 10, 10, 0.628); /* change 0.5 = opacity */
-    pointer-events: none; 
-    z-index: -1;
+   border-radius: 6px;
 }
 .Form
 {
      
     position: relative;
     z-index: 1;
-    width: 90%;
-    max-width: 400px;                  
-    margin: 50px auto;
-    margin-top: 100px;
-    padding: 20px;
+    width: 30%; 
+    height: 50%;               
     background: rgba(255,255,255,0.07);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 0 0 10px white;
     transition: 0.8s;
     transform: scale(1);
-    max-height:500px ;
+    top: 25%;
+    left: 35%;
+
 }
 .q
 {
@@ -154,27 +149,28 @@ body::before {
     text-align: center;
     position: relative;
     z-index: 1;
+    font-size: 20px;
+    padding: 10px;
+    
     
 }
-
 .A
 {
    
-    width: 90%;
-    height: 40px;
-    margin: 12px auto;
+    width: 40%;
+    height: 30px;
     display: block;
     padding: 5px;
     border-radius: 4px;
     border: none;
-   
+   margin-left: 30%;
 }
 a
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1cm;
+    margin-top: 10px;
     
 }
 .Submit
@@ -185,24 +181,10 @@ a
     margin: 15px auto;
     
 }
-span
-{
-    display: inline-block;
-    margin-top: 1cm;
-}
-
-
-
-/* animation when page loads */
 body.loaded .Form {
   transform:scale(1.1);
 }
-.line
-{
-    display: block;
-    width:60cm;
-    margin-top: 1cm;
-}
+
 .d
 { 
     font-size: 18px;
@@ -213,16 +195,118 @@ body.loaded .Form {
 .instagram
 {
     margin-left: 0;
-    margin-top: -.1cm;
+    margin-top: -0.1px;
+    border-radius: 5px;
 }
 .contact
 {
     width: 100%;
+    height: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 16%;
     position: relative;
     z-index: 1;
 }
 .contact h2 {
     color: aqua;
+}
+
+@media (max-width: 600px) {
+
+  html, body {
+    width: 100%;
+    height: 100%;
+   
+  }
+
+  /* TOP HEADER */
+  .Main {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .im {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .CN {
+    margin-top: 5px !important;
+    font-size: 20px !important;
+  }
+
+  /* MENU */
+  .Manu {
+    margin-left: 0 !important;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .listmanu {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .Navitam {
+    font-size: 16px;
+    padding: 10px 14px;
+    margin: 10px 0px;
+  }
+
+  /* SOCIAL ICONS */
+  .INLOB {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .INLO {
+    width: 22px;
+  }
+
+  /* FORM BOX */
+  .Form {
+    width: 90%;
+    left: 5%;
+    top: 80px;
+    padding-bottom: 20px;
+    transform: scale(0.5) ;
+  
+  }
+
+  .q {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .A {
+    width: 80% !important;
+    margin-left: 10% !important;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .Submit {
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+  }
+
+  /* CONTACT SECTION */
+  .contact {
+    margin-top:0;
+    bottom: 60px;
+    width: 100%;
+    padding: 1px;
+  }
+
+  .contact h2 {
+    font-size: 22px;
+  }
+  
 }
