@@ -215,7 +215,8 @@ body.loaded .Form {
 
   html, body {
     width: 100%;
-    height: 100%;
+    height: auto;
+    overflow:scroll;
    
   }
 
@@ -299,10 +300,9 @@ body.loaded .Form {
 
   /* CONTACT SECTION */
   .contact {
-    margin-top:0;
-    bottom: 60px;
+    margin-top:25%;
     width: 100%;
-    padding: 1px;
+    padding: 20px;
   }
 
   .contact h2 {
